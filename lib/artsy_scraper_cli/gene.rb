@@ -3,17 +3,17 @@ class ArtsyScraperCli::Gene
   #should return an array of intances of Gene
   def self.all
     #scrape artsy and return deals based on that data
-    gene_1 = self.new
-    gene_1.name = "abstract"
-    gene_1.url = "https://www.artsy.net/collect?gene_id=abstract-art"
-    gene_1.art_works = "Sofia Echa, 'Fluidity #13', 2015, $350"
+    self.scrape_genes
+  end
 
-    gene_2 = self.new
-    gene_2.name = "figurative"
-    gene_2.url = "https://www.artsy.net/collect?gene_id=figurative-art"
-    gene_2.art_works = "Francisco Nicolas, 'Canvas', 2001, $345"
+  def self.scrape_genes
+    genes = []
 
-    [gene_1, gene_2]
+    #Go to Artsy, find the gene page
+    #extract the properterties
+    #instantiate a gene
+    
+    genes
   end
 
 end
