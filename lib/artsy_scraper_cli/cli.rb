@@ -8,15 +8,9 @@ class ArtsyScraperCli::CLI
   end
 
   def list_genes
-   puts <<~HEREDOC.gsub /^\s*/, ' '
-      1. abstract
-      2. figurative
-      3. still life
-    HEREDOC
-
+    puts "Here are your art gene choices."
+    #Object called Gene should have a class method called @@all that will return all the genes.
     @genes = ArtsyScraperCli::Gene.all
-
-    #Object called Gene should have a class method called @@all that will returan all the genes.
   end
 
   def directions

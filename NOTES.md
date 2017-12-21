@@ -31,7 +31,10 @@ Which work of artwork would you like purchase?
 
 What is an art gene?
 
+An art gene has a name.
+A an art gene has a url?
 An art gene has as list of artworks in that gene.
+This should have a collection of genes that the CLI can use.
 
 What is an artwork?
 
