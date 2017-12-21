@@ -9,8 +9,10 @@ class ArtsyScraperCli::CLI
 
   def list_genes
     puts "Here are your art gene choices."
-    #Object called Gene should have a class method called @@all that will return all the genes.
     @genes = ArtsyScraperCli::Gene.all
+    @genes.each.with_index(1) do |gene, i|
+      puts "#{i}. #{gene}"
+    end
   end
 
   def directions
@@ -18,6 +20,7 @@ class ArtsyScraperCli::CLI
     while input != "exit"
       puts "To view artworks from a particular gene, please choose a number from the list above or type exit."
       input = gets.chomp.downcase
+      
       if input.to_i > 0
         puts @genes[input.to_i - 1]
       elsif
