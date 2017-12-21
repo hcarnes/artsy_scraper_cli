@@ -15,11 +15,15 @@ user type art shopping
 
 show list of art genres
 
+1. abstract
+2. figurative
+3. still life
+
 user types in art genre
 
 show works in the genre
 
-1. "The Persistence of Time", Dali, $20,000
-2. "Soup Cans", Warhol, $400,000,000
+1. Sofia Echa, "Fluidity #13, 2015, $350
+2. Francisco Nicolas, "Canvas", 2001, $345
 
 Which work of artwork would you like purchase?
