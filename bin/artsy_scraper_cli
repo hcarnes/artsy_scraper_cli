@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
 require './lib/artsy_scraper_cli'
+require 'artsy_scraper_cli'
 
 ArtsyScraperCli::CLI.new.call
