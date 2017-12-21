@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
-puts "Hello World"
+require './lib/artsy_scraper_cli'
+
+ArtsyScraperCli::CLI.new.call

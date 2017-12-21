@@ -1,5 +1,2 @@
-require "artsy_scraper_cli/version"
-
-module ArtsyScraperCli
-  # Your code goes here...
-end
+require_relative './artsy_scraper_cli/version'
+require_relative './artsy_scraper_cli/cli'
