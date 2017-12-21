@@ -18,13 +18,13 @@ class ArtsyScraperCli::CLI
     while input != "exit"
       puts "To view artworks from a particular gene, please choose a number from the list above or type exit."
       input = gets.chomp.downcase
-      case input
-      when "1"
-        puts "Sofia Echa, 'Fluidity #13', 2015, $350"
-      when "2"
-        puts "Francisco Nicolas, 'Canvas', 2001, $345"
-      when "3"
-        puts "Gordon Harris, 'Jelly Line Up II, £1,000 - 2,500"
+      if input.to_i > 0
+        puts @genes[input.to_i - 1]
+      elsif
+        input == "list"
+        list_genes
+      else
+        puts "Please type list or exit."
       end
     end
   end
