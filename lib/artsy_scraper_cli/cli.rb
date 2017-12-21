@@ -8,16 +8,17 @@ class ArtsyScraperCli::CLI
   end
 
   def list_genes
-   puts <<~DOC.gsub /^\s*/, ' '
+   puts <<~HEREDOC
       1. abstract
       2. figurative
       3. still life
-    DOC
+    HEREDOC
   end
 
   def directions
-    puts "To view artworks from a particular gene, please choose a number from the list above or type exit."
+    input = nil
     while input != "exit"
+      puts "To view artworks from a particular gene, please choose a number from the list above or type exit."
       input = gets.chomp.downcase
       case input
       when "1"
@@ -29,5 +30,5 @@ class ArtsyScraperCli::CLI
       end
     end
   end
-  
+
 end

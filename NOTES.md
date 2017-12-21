@@ -25,5 +25,16 @@ show works in the genre
 
 1. Sofia Echa, "Fluidity #13, 2015, $350
 2. Francisco Nicolas, "Canvas", 2001, $345
+3. Gordon Harris, 'Jelly Line Up II, £1,000 - 2,500
 
 Which work of artwork would you like purchase?
+
+What is an art gene?
+
+An art gene has as list of artworks in that gene.
+
+What is an artwork?
+
+An artwork has a title
+An artwork has an artist name
+An artwork has a price (optional)
