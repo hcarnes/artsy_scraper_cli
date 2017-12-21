@@ -11,7 +11,7 @@ class ArtsyScraperCli::CLI
     puts "Here are your art gene choices."
     @genes = ArtsyScraperCli::Gene.all
     @genes.each.with_index(1) do |gene, i|
-      puts "#{i}. #{gene}"
+      puts "#{i}. #{gene.name}"
     end
   end
 
@@ -22,7 +22,8 @@ class ArtsyScraperCli::CLI
       input = gets.chomp.downcase
       
       if input.to_i > 0
-        puts @genes[input.to_i - 1]
+        the_gene = @genes[input.to_i - 1]
+        puts "#{the_gene.name} - #{the_gene.url} - #{the_gene.art_works}"
       elsif
         input == "list"
         list_genes

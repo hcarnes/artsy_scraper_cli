@@ -2,6 +2,7 @@ class ArtsyScraperCli::Gene
   attr_accessor :name, :url, :art_works
   #should return an array of intances of Gene
   def self.all
+    #scrape artsy and return deals based on that data
     gene_1 = self.new
     gene_1.name = "abstract"
     gene_1.url = "https://www.artsy.net/collect?gene_id=abstract-art"
