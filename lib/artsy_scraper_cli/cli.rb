@@ -1,6 +1,10 @@
 #This is the CLI Controller
 
-class ArtsyScraperCli::CLI
+class CLI
+
+  def initialize
+    @scraper = Scraper.new
+  end
 
   def call
     list_genes
@@ -9,7 +13,7 @@ class ArtsyScraperCli::CLI
 
   def list_genes
     puts "Here are your art gene choices."
-    @genes = ArtsyScraperCli::Gene.all
+    @genes = @scraper.scrape_genes
     @genes.each.with_index(1) do |gene, i|
       puts "#{i}. #{gene.name}"
     end

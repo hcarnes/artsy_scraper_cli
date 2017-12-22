@@ -3,4 +3,4 @@
 require './lib/artsy_scraper_cli'
 
 
-ArtsyScraperCli::CLI.new.call
+CLI.new.call
