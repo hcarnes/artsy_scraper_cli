@@ -24,8 +24,9 @@ class Scraper
     art_elements = @driver.find_elements(css: ".artwork-item")
     art_elements.map do |art_element|
       title = art_element.find_element(css: ".artwork-item-title").text
+      artist_name = art_element.find_element(css: ".artwork-item-artist").text
       image_url = art_element.find_element(css: "img").attribute("src")
-      Artwork.new(title, image_url)
+      Artwork.new(title, artist_name, image_url)
     end
   end
 
