@@ -13,4 +13,8 @@ class Scraper
     end
   end
 
+  def scrape_gene_artworks(gene)
+    []
+  end
+
 end
