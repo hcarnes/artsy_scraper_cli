@@ -1,8 +1,6 @@
 # ArtsyScraperCli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/artsy_scraper_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the ArtsyScraperCli gem. This gem is a virtual art gallery that lists artwork genes and prints 10 works of art based on the user's selection. Data for this gem is pulled from Artsy.com using Selenium Webdriver. 
 
 ## Installation
 
@@ -22,7 +20,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'artsy_scraper_cli'
+
+CLI.new.call
+```
 
 ## Development
 
