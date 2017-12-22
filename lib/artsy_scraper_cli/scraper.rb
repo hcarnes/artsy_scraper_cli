@@ -9,13 +9,12 @@ class Scraper
     @driver.get('https://www.artsy.net/collect')
     elements = @driver.find_elements(css: ".cf-categories__category")
     elements.map do |gene_element|
-      Gene.new(gene_element.text)
+      Gene.new(gene_element.text, gene_element)
     end
   end
   
   def scrape_gene_artworks(gene)
-    gene_element = @driver.find_element(xpath: "//div[contains(text(), '#{gene.name.capitalize}')]/../div")
-    gene_element.click
+    gene.element.click
     @driver.save_screenshot('screenshot.png')
     `open screenshot.png`
     binding.pry
