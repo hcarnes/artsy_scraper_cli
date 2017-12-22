@@ -11,8 +11,6 @@ CLI Gem Planning
 
 **A ClI for artworks using Artsy** 
 
-user type art shopping
-
 show list of art genres
 
 1. abstract

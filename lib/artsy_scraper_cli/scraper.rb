@@ -15,10 +15,9 @@ class Scraper
   
   def scrape_gene_artworks(gene)
     gene.element.click
-    @driver.save_screenshot('screenshot.png')
-    `open screenshot.png`
+    @driver.find_elements(css: ".artwork-item-image-container")
+    Artwork.new(name, title)
     binding.pry
-    []
   end
 
 end
