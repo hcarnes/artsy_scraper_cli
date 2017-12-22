@@ -8,7 +8,9 @@ class Scraper
   def scrape_genes
     @driver.get('https://www.artsy.net/collect')
     elements = @driver.find_elements(css: ".cf-categories__category")
-    binding.pry
+    elements.map do |gene_element|
+      Gene.new(gene_element.text)
+    end
   end
 
 end
