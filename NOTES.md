@@ -41,3 +41,8 @@ This should have a collection of genes that the CLI can use.
 An artwork has a title
 An artwork has an artist name
 An artwork has a price (optional)
+
+**What is a scraper?**
+
+A scraper scrapes genes.
+A scraper scrapes artworks from genes.
