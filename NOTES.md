@@ -9,7 +9,7 @@ CLI Gem Planning
 7. discover objects
 8. program
 
-- A ClI for artworks using Artsy
+**A ClI for artworks using Artsy** 
 
 user type art shopping
 
@@ -29,14 +29,14 @@ show works in the genre
 
 Which work of artwork would you like purchase?
 
-What is an art gene?
+**What is an art gene?**
 
 An art gene has a name.
 A an art gene has a url?
-An art gene has as list of artworks in that gene.
+An art gene has as list of artworks in that gene. This will be an array of hashes with artwork info.
 This should have a collection of genes that the CLI can use.
 
-What is an artwork?
+**What is an artwork?**
 
 An artwork has a title
 An artwork has an artist name
