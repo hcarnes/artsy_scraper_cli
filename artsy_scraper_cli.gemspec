@@ -37,5 +37,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "nokogiri"
   spec.add_dependency "selenium-webdriver"
+  spec.add_development_dependency "iterm-imgcat"
 
 end

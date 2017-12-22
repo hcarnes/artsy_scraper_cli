@@ -1,6 +1,7 @@
 #This is the CLI Controller
 
 class CLI
+  include Iterm::Imgcat
 
   def initialize
     @scraper = Scraper.new
@@ -27,8 +28,11 @@ class CLI
       
       if input.to_i > 0
         the_gene = @genes[input.to_i - 1]
-        artworks = @scraper.scrape_gene_artworks(the_gene)
-        artworks.each {|x| puts x.title + x.image_url}
+        scraped_artworks = @scraper.scrape_gene_artworks(the_gene)
+        scraped_artworks[0..9].each do |scraped_artwork|
+          get_and_print_image(url: scraped_artwork.image_url)
+          puts scraped_artwork.title
+        end
       elsif
         input == "list"
         list_genes
