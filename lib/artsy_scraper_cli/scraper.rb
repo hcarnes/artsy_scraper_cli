@@ -15,11 +15,13 @@ class Scraper
   
   def scrape_gene_artworks(gene)
     gene.element.click
-    art_element = @driver.find_element(css: ".cf-artworks")
-    art_element.map do |art_element|
-      @title = @driver.find_element(css: ".artwork-item-title artwork-item-overflow")
-      Artwork.new(@title)
+    art_elements = @driver.find_elements(css: ".artwork-item")
+    art_elements.map do |art_element|
+      title = art_element.find_element(css: ".artwork-item-title").text
+      Artwork.new(title)
     end
   end
 
 end
+
+  
