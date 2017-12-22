@@ -28,7 +28,7 @@ class CLI
       if input.to_i > 0
         the_gene = @genes[input.to_i - 1]
         artworks = @scraper.scrape_gene_artworks(the_gene)
-        artworks.each {|x| puts x.title}
+        artworks.each {|x| puts x.title + x.image_url}
       elsif
         input == "list"
         list_genes

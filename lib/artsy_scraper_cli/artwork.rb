@@ -1,7 +1,8 @@
 class Artwork
-  attr_accessor :title
+  attr_accessor :title, :image_url
   
-  def initialize(title)
+  def initialize(title, image_url)
     @title = title
+    @image_url = image_url
   end
 end
