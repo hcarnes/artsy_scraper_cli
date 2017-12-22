@@ -9,11 +9,17 @@ class ArtsyScraperCli::Gene
   def self.scrape_genes
     genes = []
 
+    genes << self.scrape_artsy
+
     #Go to Artsy, find the gene page
     #extract the properterties
     #instantiate a gene
-    
+
     genes
+  end
+
+  def self.scrape_artsy
+    doc = Nokogiri::HTML(open("https://artsy.net/collect"))
   end
 
 end
