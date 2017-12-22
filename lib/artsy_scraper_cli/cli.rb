@@ -33,6 +33,7 @@ class CLI
           get_and_print_image(url: scraped_artwork.image_url)
           puts scraped_artwork.title
         end
+        list_genes
       elsif
         input == "list"
         list_genes
