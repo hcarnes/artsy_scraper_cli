@@ -12,8 +12,13 @@ class Scraper
       Gene.new(gene_element.text)
     end
   end
-
+  
   def scrape_gene_artworks(gene)
+    gene_element = @driver.find_element(xpath: "//div[contains(text(), '#{gene.name.capitalize}')]/../div")
+    gene_element.click
+    @driver.save_screenshot('screenshot.png')
+    `open screenshot.png`
+    binding.pry
     []
   end
 
