@@ -2,6 +2,10 @@
 
 Welcome to the ArtsyScraperCli gem. This gem is a virtual art gallery that lists artwork genes and prints 10 works of art based on the user's selection. Data for this gem is pulled from Artsy.com using Selenium Webdriver. 
 
+## Demo
+
+![iterm_image](https://imgur.com/898o2Te.gif "Screenshot")
+
 ## Installation
 
 Add this line to your application's Gemfile:
