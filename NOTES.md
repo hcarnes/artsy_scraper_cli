@@ -11,6 +11,8 @@ CLI Gem Planning
 
 **A ClI for artworks using Artsy** 
 
+**CLI/User Interface
+
 show list of art genres
 
 1. abstract
@@ -21,9 +23,9 @@ user types in art genre
 
 show works in the genre
 
-1. Sofia Echa, "Fluidity #13, 2015, $350
-2. Francisco Nicolas, "Canvas", 2001, $345
-3. Gordon Harris, 'Jelly Line Up II, £1,000 - 2,500
+1. Sofia Echa, "Fluidity #13, 2015
+2. Francisco Nicolas, "Canvas", 2001
+3. Gordon Harris, 'Jelly Line Up II
 
 Which work of artwork would you like purchase?
 
